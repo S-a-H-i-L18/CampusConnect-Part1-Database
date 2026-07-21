@@ -60,7 +60,7 @@ VALUES
 (10,'Cloud Computing',3,27,10);
 
 -- ===========================================================
--- Assignments (10 Records)
+-- Assignments (20 Records)
 -- ===========================================================
 
 INSERT INTO Assignments
@@ -75,10 +75,20 @@ VALUES
 (7,7,'Network Security Audit','2026-08-30',100),
 (8,8,'REST API Development','2026-09-02',100),
 (9,9,'Prediction Model','2026-09-05',100),
-(10,10,'Cloud Deployment','2026-09-08',100);
+(10,10,'Cloud Deployment','2026-09-08',100),
+(11,1,'Database Normalization','2026-09-12',100),
+(12,2,'Deadlock Analysis','2026-09-14',100),
+(13,3,'Socket Programming','2026-09-16',100),
+(14,4,'Graph Algorithms','2026-09-18',100),
+(15,5,'Design Patterns','2026-09-20',100),
+(16,6,'Neural Networks','2026-09-22',100),
+(17,7,'Penetration Testing','2026-09-24',100),
+(18,8,'Authentication System','2026-09-26',100),
+(19,9,'Data Preprocessing','2026-09-28',100),
+(20,10,'Docker Containers','2026-09-30',100);
 
 -- ===========================================================
--- Enrollments (15 Records)
+-- Enrollments (20 Records)
 -- ===========================================================
 
 INSERT INTO Enrollments
@@ -98,7 +108,12 @@ VALUES
 (12,9,2,'2026-02-07','Completed','A'),
 (13,9,5,'2026-02-07','Enrolled',NULL),
 (14,10,6,'2026-02-08','Dropped',NULL),
-(15,10,8,'2026-02-08','Enrolled',NULL);
+(15,10,8,'2026-02-08','Enrolled',NULL),
+(16,4,2,'2026-02-09','Completed','B'),
+(17,5,3,'2026-02-10','Enrolled',NULL),
+(18,6,1,'2026-02-11','Completed','A'),
+(19,7,4,'2026-02-12','Dropped',NULL),
+(20,8,6,'2026-02-13','Enrolled',NULL);
 
 -- ===========================================================
 -- Foreign Key Demonstration (Do NOT Execute)
@@ -114,7 +129,7 @@ VALUES
 -- INSERT INTO Enrollments
 -- (enrollment_id, student_id, course_id, enrollment_date, status)
 -- VALUES
--- (16,999,1,'2026-02-10','Enrolled');
+-- (999,999,1,'2026-02-10','Enrolled');
 
 -- Example 2:
 -- This would fail if Course ID 999 does not exist.
@@ -122,7 +137,7 @@ VALUES
 -- INSERT INTO Assignments
 -- (assignment_id, course_id, title, due_date, max_marks)
 -- VALUES
--- (11,999,'Invalid Assignment','2026-09-15',100);
+-- (999,999,'Invalid Assignment','2026-09-15',100);
 
 -- ===========================================================
 -- End of Sample Data
