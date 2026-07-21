@@ -125,7 +125,9 @@ CREATE TABLE Assignments (
     FOREIGN KEY(course_id)
         REFERENCES Courses(course_id)
         ON UPDATE CASCADE
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
+    
+    UNIQUE(course_id, title)
 );
 
 -- ===========================================================
